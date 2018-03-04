@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:scrollbars="none"
+    tools:context="urgroup.in.dbmssqlcompleteguide.button20">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" DBMS - Deadlock"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:textColor="#008080"
+            android:textSize="19dp"
+            android:text="In a multi-process system, deadlock is an unwanted situation that arises in a shared resource environment, where a process indefinitely waits for a resource that is held by another process."
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:textColor="#008080"
+            android:textSize="19dp"
+            android:text="For example, assume a set of transactions {T0, T1, T2, ...,Tn}. T0 needs a resource X to complete its task. Resource X is held by T1, and T1 is waiting for a resource Y, which is held by T2. T2 is waiting for resource Z, which is held by T0. Thus, all the processes wait for each other to release resources. In this situation, none of the processes can finish their task. This situation is known as a deadlock."
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:textColor="#008080"
+            android:textSize="19dp"
+            android:text="Deadlocks are not healthy for a system. In case a system is stuck in a deadlock, the transactions involved in the deadlock are either rolled back or restarted."
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Deadlock Prevention"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:textColor="#008080"
+            android:textSize="19dp"
+            android:text="To prevent any deadlock situation in the system, the DBMS aggressively inspects all the operations, where transactions are about to execute. The DBMS inspects the operations and analyzes if they can create a deadlock situation. If it finds that a deadlock situation might occur, then that transaction is never allowed to be executed."
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:textColor="#008080"
+            android:textSize="19dp"
+            android:text="There are deadlock prevention schemes that use timestamp ordering mechanism of transactions in order to predetermine a deadlock situation."
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Wait-Die Scheme"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:textColor="#008080"
+            android:textSize="19dp"
+            android:text="In this scheme, if a transaction requests to lock a resource (data item), which is already held with a conflicting lock by another transaction, then one of the two possibilities may occur −"
+            />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp">
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="If TS(Ti) is smaller than TS(Tj) − that is Ti, which is requesting a conflicting lock, is older than Tj − then Ti is allowed to wait until the data-item is available."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView></TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="If TS(Ti) is greter than TS(tj) − that is Ti is younger than Tj − then Ti dies. Tiis restarted later with a random delay but with the same timestamp."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView></TableRow></TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:textColor="#008080"
+            android:textSize="19dp"
+            android:text="This scheme allows the older transaction to wait but kills the younger one."
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Wound-Wait Scheme"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:textColor="#008080"
+            android:textSize="19dp"
+            android:text="In this scheme, if a transaction requests to lock a resource (data item), which is already held with conflicting lock by some another transaction, one of the two possibilities may occur −"
+            />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp">
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="If TS(Ti) is smaller then TS(Tj), then Ti forces Tj to be rolled back − that is Tiwounds Tj. Tj is restarted later with a random delay but with the same timestamp."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView></TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="If TS(Ti) is greter than TS(Tj), then Ti is forced to wait until the resource is available."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView></TableRow></TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:textColor="#008080"
+            android:textSize="19dp"
+            android:text="This scheme, allows the younger transaction to wait; but when an older transaction requests an item held by a younger one, the older transaction forces the younger one to abort and release the item."
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:textColor="#008080"
+            android:textSize="19dp"
+            android:text="In both the cases, the transaction that enters the system at a later stage is aborted."
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Deadlock Avoidance"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:textColor="#008080"
+            android:textSize="19dp"
+            android:text="Aborting a transaction is not always a practical approach. Instead, deadlock avoidance mechanisms can be used to detect any deadlock situation in advance. Methods like wait-for graph are available but they are suitable for only those systems where transactions are lightweight having fewer instances of resource. In a bulky system, deadlock prevention techniques may work well."
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Wait-for Graph"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:textColor="#008080"
+            android:textSize="19dp"
+            android:text="This is a simple method available to track if any deadlock situation may arise. For each transaction entering into the system, a node is created. When a transaction Ti requests for a lock on an item, say X, which is held by some other transaction Tj, a directed edge is created from Ti to Tj. If Tj releases item X, the edge between them is dropped and Ti locks the data item."
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:textColor="#008080"
+            android:textSize="19dp"
+            android:text="The system maintains this wait-for graph for every transaction waiting for some data items held by others. The system keeps checking if there's any cycle in the graph."
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:layout_marginTop="14dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/wait_for_graph" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:textColor="#008080"
+            android:textSize="19dp"
+            android:text="Here, we can use any of the two following approaches −"
+            />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp">
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="First, do not allow any request for an item, which is already locked by another transaction. This is not always feasible and may cause starvation, where a transaction indefinitely waits for a data item and can never acquire it."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView></TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="The second option is to roll back one of the transactions. It is not always feasible to roll back the younger transaction, as it may be important than the older one. With the help of some relative algorithm, a transaction is chosen, which is to be aborted. This transaction is known as the victim and the process is known as victim selection."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView></TableRow></TableLayout>
+
+
+    </LinearLayout>
+</ScrollView>

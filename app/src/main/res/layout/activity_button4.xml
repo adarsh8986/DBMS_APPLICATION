@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:scrollbars="none"
+    tools:context="urgroup.in.dbmssqlcompleteguide.button4">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ER Model - Basic Concepts"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:textColor="#008080"
+            android:textSize="19dp"
+            android:text="The ER model defines the conceptual view of a database. It works around real-world entities and the associations among them. At view level, the ER model is considered a good option for designing databases."
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Entity"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:textColor="#008080"
+            android:textSize="19dp"
+            android:text="An entity can be a real-world object, either animate or inanimate, that can be easily identifiable. For example, in a school database, students, teachers, classes, and courses offered can be considered as entities. All these entities have some attributes or properties that give them their identity."
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:textColor="#008080"
+            android:textSize="19dp"
+            android:text="An entity set is a collection of similar types of entities. An entity set may contain entities with attribute sharing similar values. For example, a Students set may contain all the students of a school; likewise a Teachers set may contain all the teachers of a school from all faculties. Entity sets need not be disjoint."
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Attributes"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:textColor="#008080"
+            android:textSize="19dp"
+            android:text="Entities are represented by means of their properties, called attributes. All attributes have values. For example, a student entity may have name, class, and age as attributes."
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:textColor="#008080"
+            android:textSize="19dp"
+            android:text="There exists a domain or range of values that can be assigned to attributes. For example, a student's name cannot be a numeric value. It has to be alphabetic. A student's age cannot be negative, etc"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Types of Attributes"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Simple attribute − Simple attributes are atomic values, which cannot be divided further. For example, a student's phone number is an atomic value of 10 digits."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Composite attribute − Composite attributes are made of more than one simple attribute. For example, a student's complete name may have first_name and last_name."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Derived attribute − Derived attributes are the attributes that do not exist in the physical database, but their values are derived from other attributes present in the database. For example, average_salary in a department should not be saved directly in the database, instead it can be derived. For another example, age can be derived from data_of_birth."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Single-value attribute − Single-value attributes contain single value. For example − Social_Security_Number."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Multi-value attribute − Multi-value attributes may contain more than one values. For example, a person can have more than one phone number, email_address, etc."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+
+            </TableRow>
+        </TableLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:textColor="#008080"
+            android:textSize="19dp"
+            android:text="These attribute types can come together in a way like −"
+            />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="simple single-valued attributes"
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="simple multi-valued attributes"
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="composite single-valued attributes"
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="composite multi-valued attributes"
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+
+            </TableRow>
+        </TableLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Entity-Set and Keys"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:textColor="#008080"
+            android:textSize="19dp"
+            android:text="Key is an attribute or collection of attributes that uniquely identifies an entity among entity set."
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:textColor="#008080"
+            android:textSize="19dp"
+            android:text="For example, the roll_number of a student makes him/her identifiable among students."
+            />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Super Key − A set of attributes (one or more) that collectively identifies an entity in an entity set."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Candidate Key − A minimal super key is called a candidate key. An entity set may have more than one candidate key."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Primary Key − A primary key is one of the candidate keys chosen by the database designer to uniquely identify the entity set."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Relationship"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:textColor="#008080"
+            android:textSize="19dp"
+            android:text="The association among entities is called a relationship. For example, an employee works_at a department, a student enrolls in a course. Here, Works_at and Enrolls are called relationships."
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Relationship Set"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:textColor="#008080"
+            android:textSize="19dp"
+            android:text="A set of relationships of similar type is called a relationship set. Like entities, a relationship too can have attributes. These attributes are called descriptive attributes."
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Degree of Relationship"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:textColor="#008080"
+            android:textSize="19dp"
+            android:text="The number of participating entities in a relationship defines the degree of the relationship."
+            />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Binary = degree 2"
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Ternary = degree 3"
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="n-ary = degree"
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+
+            </TableRow>
+        </TableLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mapping Cardinalities"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:textColor="#008080"
+            android:textSize="19dp"
+            android:text="Cardinality defines the number of entities in one entity set, which can be associated with the number of entities of other set via relationship set."
+            />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="One-to-one − One entity from entity set A can be associated with at most one entity of entity set B and vice versa."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+
+            </TableRow>
+        </TableLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:layout_marginTop="14dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/one_to_one_relation" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="One-to-many − One entity from entity set A can be associated with more than one entities of entity set B however an entity from entity set B, can be associated with at most one entity."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+
+            </TableRow>
+        </TableLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:layout_marginTop="14dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/one_to_many_relation" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Many-to-one − More than one entities from entity set A can be associated with at most one entity of entity set B, however an entity from entity set B can be associated with more than one entity from entity set A."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+
+            </TableRow>
+        </TableLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:layout_marginTop="14dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/many_to_one_relation" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Many-to-many − One entity from A can be associated with more than one entity from B and vice versa."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+
+            </TableRow>
+        </TableLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:layout_marginTop="14dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/many_to_many_relation" />
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

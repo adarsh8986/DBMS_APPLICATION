@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:scrollbars="none"
+    tools:context="urgroup.in.dbmssqlcompleteguide.button13">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="DBMS - Joins"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:text="We understand the benefits of taking a Cartesian product of two relations, which gives us all the possible tuples that are paired together. But it might not be feasible for us in certain cases to take a Cartesian product where we encounter huge relations with thousands of tuples having a considerable large number of attributes."
+            android:textColor="#008080"
+            android:textSize="19dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:text="Join is a combination of a Cartesian product followed by a selection process. A Join operation pairs two tuples from different relations, if and only if a given join condition is satisfied."
+            android:textColor="#008080"
+            android:textSize="19dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:text="We will briefly describe various join types in the following sections."
+            android:textColor="#008080"
+            android:textSize="19dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Theta (θ) Join"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:text="Theta join combines tuples from different relations provided they satisfy the theta condition. The join condition is denoted by the symbol θ."
+            android:textColor="#008080"
+            android:textSize="19dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Notation"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:text="R1 ⋈θ R2  \n  R1 and R2 are relations having attributes (A1, A2, .., An) and (B1, B2,.. ,Bn) such that the attributes don’t have anything in common, that is R1 ∩ R2 = Φ. \n Theta join can use all kinds of comparison operators."
+            android:textColor="#008080"
+            android:textSize="19dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:text="Student
+\n SID	   Name	     Std
+\n 101	   Alex	     10
+\n 102	   Maria	 11"
+            android:textColor="#008080"
+            android:textSize="19dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:text="Subjects
+\nClass	    Subject
+\n10	    Math
+\n10	    English
+\n11	    Music
+\n11	    Sports"
+            android:textColor="#008080"
+            android:textSize="19dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:text="Student_Detail − \n
+
+STUDENT ⋈Student.Std = Subject.Class SUBJECT"
+            android:textColor="#008080"
+            android:textSize="19dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:text="Student_detail \n
+SID	Name	Std	Class	Subject \n
+101	Alex	10	10	Math \n
+101	Alex	10	10	English \n
+102	Maria	11	11	Music \n
+102	Maria	11	11	Sports"
+            android:textColor="#008080"
+            android:textSize="19dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Equijoin"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:text="When Theta join uses only equality comparison operator, it is said to be equijoin. The above example corresponds to equijoin."
+            android:textColor="#008080"
+            android:textSize="19dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Natural Join (⋈)"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:text="Natural join does not use any comparison operator. It does not concatenate the way a Cartesian product does. We can perform a Natural Join only if there is at least one common attribute that exists between two relations. In addition, the attributes must have the same name and domain."
+            android:textColor="#008080"
+            android:textSize="19dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:text="Natural join acts on those matching attributes where the values of attributes in both the relations are same."
+            android:textColor="#008080"
+            android:textSize="19dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:text="Courses
+\nCID	Course	Dept
+\nCS01	Database	CS
+\nME01	Mechanics	ME
+\nEE01	Electronics	EE"
+            android:textColor="#008080"
+            android:textSize="19dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:text="HoD
+\nDept	Head
+\nCS	Alex
+\nME	Maya
+\nEE	Mira"
+            android:textColor="#008080"
+            android:textSize="19dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:text="Courses ⋈ HoD
+\nDept	CID	Course	Head
+\nCS	CS01	Database	Alex
+\nME	ME01	Mechanics	Maya
+\nEE	EE01	Electronics	Mira"
+            android:textColor="#008080"
+            android:textSize="19dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Outer Joins"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:text="Theta Join, Equijoin, and Natural Join are called inner joins. An inner join includes only those tuples with matching attributes and the rest are discarded in the resulting relation. Therefore, we need to use outer joins to include all the tuples from the participating relations in the resulting relation. There are three kinds of outer joins − left outer join, right outer join, and full outer join."
+            android:textColor="#008080"
+            android:textSize="19dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Types of Outer Joins"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:text="There are three types of outer joins:"
+            android:textColor="#008080"
+            android:textSize="19dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Left Outer Join – All rows from the left table are included, unmatched rows from the right are replaced with NULL values."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Right Outer Join – All rows from the right table are included, unmatched rows from the left are replaced with NULL values"
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Full Outer Join – All rows from both tables are included, NULL values fill unmatched rows."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+            </TableRow>
+        </TableLayout>
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:scrollbars="none"
+    tools:context="urgroup.in.dbmssqlcompleteguide.button15">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="DBMS - File Structure"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:textColor="#008080"
+            android:textSize="19dp"
+            android:text="Relative data and information is stored collectively in file formats. A file is a sequence of records stored in binary format. A disk drive is formatted into several blocks that can store records. File records are mapped onto those disk blocks."
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="File Organization"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:textColor="#008080"
+            android:textSize="19dp"
+            android:text="File Organization defines how file records are mapped onto disk blocks. We have four types of File Organization to organize file records −"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:layout_marginTop="14dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/file_organization" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Heap File Organization"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:textColor="#008080"
+            android:textSize="19dp"
+            android:text="When a file is created using Heap File Organization, the Operating System allocates memory area to that file without any further accounting details. File records can be placed anywhere in that memory area. It is the responsibility of the software to manage the records. Heap File does not support any ordering, sequencing, or indexing on its own."
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sequential File Organization"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:textColor="#008080"
+            android:textSize="19dp"
+            android:text="Every file record contains a data field (attribute) to uniquely identify that record. In sequential file organization, records are placed in the file in some sequential order based on the unique key field or search key. Practically, it is not possible to store all the records sequentially in physical form."
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hash File Organization"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:textColor="#008080"
+            android:textSize="19dp"
+            android:text="Hash File Organization uses Hash function computation on some fields of the records. The output of the hash function determines the location of disk block where the records are to be placed."
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Clustered File Organization"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:textColor="#008080"
+            android:textSize="19dp"
+            android:text="Clustered file organization is not considered good for large databases. In this mechanism, related records from one or more relations are kept in the same disk block, that is, the ordering of records is not based on primary key or search key."
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="File Operations"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:textColor="#008080"
+            android:textSize="19dp"
+            android:text="Operations on database files can be broadly classified into two categories −"
+            />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp">
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Update Operations"
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Retrieval Operations."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+            </TableRow></TableLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:textColor="#008080"
+            android:textSize="19dp"
+            android:text="Update operations change the data values by insertion, deletion, or update. Retrieval operations, on the other hand, do not alter the data but retrieve them after optional conditional filtering. In both types of operations, selection plays a significant role. Other than creation and deletion of a file, there could be several operations, which can be done on files."
+            />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp">
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Open − A file can be opened in one of the two modes, read mode or write mode. In read mode, the operating system does not allow anyone to alter data. In other words, data is read only. Files opened in read mode can be shared among several entities. Write mode allows data modification. Files opened in write mode can be read but cannot be shared."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Locate − Every file has a file pointer, which tells the current position where the data is to be read or written. This pointer can be adjusted accordingly. Using find (seek) operation, it can be moved forward or backward."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Read − By default, when files are opened in read mode, the file pointer points to the beginning of the file. There are options where the user can tell the operating system where to locate the file pointer at the time of opening a file. The very next data to the file pointer is read."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Write − User can select to open a file in write mode, which enables them to edit its contents. It can be deletion, insertion, or modification. The file pointer can be located at the time of opening or can be dynamically changed if the operating system allows to do so."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Close − This is the most important operation from the operating system’s point of view. When a request to close a file is generated, the operating system  \n removes all the locks (if in shared mode), \n saves the data (if altered) to the secondary storage media, and \n releases all the buffers and file handlers associated with the file."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+            </TableRow></TableLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:textColor="#008080"
+            android:textSize="19dp"
+            android:text="The organization of data inside a file plays a major role here. The process to locate the file pointer to a desired record inside a file various based on whether the records are arranged sequentially or clustered."
+            />
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:scrollbars="none"
+    tools:context="urgroup.in.dbmssqlcompleteguide.button16">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="DBMS - Indexing"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:text="We know that data is stored in the form of records. Every record has a key field, which helps it to be recognized uniquely."
+            android:textColor="#008080"
+            android:textSize="19dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:text="Indexing is a data structure technique to efficiently retrieve records from the database files based on some attributes on which the indexing has been done. Indexing in database systems is similar to what we see in books."
+            android:textColor="#008080"
+            android:textSize="19dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:text="Indexing is defined based on its indexing attributes. Indexing can be of the following types −"
+            android:textColor="#008080"
+            android:textSize="19dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Primary Index − Primary index is defined on an ordered data file. The data file is ordered on a key field. The key field is generally the primary key of the relation."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Secondary Index − Secondary index may be generated from a field which is a candidate key and has a unique value in every record, or a non-key with duplicate values."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Clustering Index − Clustering index is defined on an ordered data file. The data file is ordered on a non-key field."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:text="Ordered Indexing is of two types −"
+            android:textColor="#008080"
+            android:textSize="19dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Sparse Index"
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Dense Index"
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Dense Index"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:text="In dense index, there is an index record for every search key value in the database. This makes searching faster but requires more space to store index records itself. Index records contain search key value and a pointer to the actual record on the disk."
+            android:textColor="#008080"
+            android:textSize="19dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:layout_marginTop="14dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/dense_index" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sparse Index"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:text="In sparse index, index records are not created for every search key. An index record here contains a search key and an actual pointer to the data on the disk. To search a record, we first proceed by index record and reach at the actual location of the data. If the data we are looking for is not where we directly reach by following the index, then the system starts sequential search until the desired data is found."
+            android:textColor="#008080"
+            android:textSize="19dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:layout_marginTop="14dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/sparse_index" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Multilevel Index"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:text="Index records comprise search-key values and data pointers. Multilevel index is stored on the disk along with the actual database files. As the size of the database grows, so does the size of the indices. There is an immense need to keep the index records in the main memory so as to speed up the search operations. If single-level index is used, then a large size index cannot be kept in memory which leads to multiple disk accesses."
+            android:textColor="#008080"
+            android:textSize="19dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:layout_marginTop="14dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/multi_level_index" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:text="Multi-level Index helps in breaking down the index into several smaller indices in order to make the outermost level so small that it can be saved in a single disk block, which can easily be accommodated anywhere in the main memory."
+            android:textColor="#008080"
+            android:textSize="19dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="B+ Tree"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:text="A B+ tree is a balanced binary search tree that follows a multi-level index format. The leaf nodes of a B+ tree denote actual data pointers. B+ tree ensures that all leaf nodes remain at the same height, thus balanced. Additionally, the leaf nodes are linked using a link list; therefore, a B+ tree can support random access as well as sequential access."
+            android:textColor="#008080"
+            android:textSize="19dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Structure of B+ Tree"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:text="Every leaf node is at equal distance from the root node. A B+ tree is of the order n where n is fixed for every B+ tree."
+            android:textColor="#008080"
+            android:textSize="19dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:layout_marginTop="14dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/b_plus_tree" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Internal nodes −"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Internal (non-leaf) nodes contain at least ⌈n/2⌉ pointers, except the root node."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="At most, an internal node can contain n pointers."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Leaf nodes −"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Leaf nodes contain at least ⌈n/2⌉ record pointers and ⌈n/2⌉ key values."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="At most, a leaf node can contain n record pointers and n key values."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Every leaf node contains one block pointer P to point to next leaf node and forms a linked list."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="B+ Tree Insertion"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="B+ trees are filled from bottom and each entry is done at the leaf node."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="If a leaf node overflows − \n Split node into two parts. \n Partition at i = ⌊(m+1)/2⌋. \n First i entries are stored in one node. \n Rest of the entries (i+1 onwards) are moved to a new node. \n ith key is duplicated at the parent of the leaf. "
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+            </TableRow>
+
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="If a non-leaf node overflows −  \n Split node into two parts.  \n  Partition the node at i = ⌈(m+1)/2⌉. \n Entries up to i are kept in one node.  \n Rest of the entries are moved to a new node."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="B+ Tree Deletion"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="B+ tree entries are deleted at the leaf nodes."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="The target entry is searched and deleted. \n If it is an internal node, delete and replace with the entry from the left position."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="After deletion, underflow is tested, \n If underflow occurs, distribute the entries from the nodes left to it."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="If distribution is not possible from left, then  \n Distribute from the nodes right to it."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="If distribution is not possible from left or from right, then \n  Merge the node with left and right to it."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+            </TableRow>
+
+
+        </TableLayout>
+
+
+    </LinearLayout>
+</ScrollView>
+

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_concept"
+            android:icon="@drawable/ic_menu_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_rate"
+            android:icon="@drawable/ic_star_rate_black_18dp"
+            android:title="Rate Us" />
+
+
+
+
+    </group>
+    <item android:title="Faculty Members">
+        <menu>
+            <item
+                android:id="@+id/teacher"
+                android:icon="@drawable/teacher"
+                android:title="Teacher" />
+
+        </menu>
+    </item>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+
+        </menu>
+    </item>
+    <item android:title="Help">
+        <menu>
+            <item
+                android:id="@+id/privacy_policy"
+                android:icon="@drawable/ic_menu_help"
+                android:title="privacy_policy" />
+        </menu>
+    </item>
+
+
+</menu>

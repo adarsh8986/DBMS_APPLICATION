@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:scrollbars="none"
+    tools:context="urgroup.in.dbmssqlcompleteguide.button10">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ER Model to Relational Model"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:textColor="#008080"
+            android:textSize="19dp"
+            android:text="ER Model, when conceptualized into diagrams, gives a good overview of entity-relationship, which is easier to understand. ER diagrams can be mapped to relational schema, that is, it is possible to create relational schema using ER diagram. We cannot import all the ER constraints into relational model, but an approximate schema can be generated."
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:textColor="#008080"
+            android:textSize="19dp"
+            android:text="There are several processes and algorithms available to convert ER Diagrams into Relational Schema. Some of them are automated and some of them are manual. We may focus here on the mapping diagram contents to relational basics."
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:textColor="#008080"
+            android:textSize="19dp"
+            android:text="ER diagrams mainly comprise of −"
+            />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp">
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Entity and its attributes."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView></TableRow>
+
+
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Relationship, which is association among entities."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView></TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mapping Entity"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:textColor="#008080"
+            android:textSize="19dp"
+            android:text="An entity is a real-world object with some attributes."
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:layout_marginTop="14dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/mapping_entities" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mapping Process (Algorithm)"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp">
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Create table for each entity."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView></TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Entity's attributes should become fields of tables with their respective data types."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView></TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Declare primary key."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView></TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mapping Relationship"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:textColor="#008080"
+            android:textSize="19dp"
+            android:text="A relationship is an association among entities."
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:layout_marginTop="14dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/mapping_relationship" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mapping Process"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp">
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Create table for a relationship."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView></TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Add the primary keys of all participating Entities as fields of table with their respective data types."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView></TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="If relationship has any attribute, add each attribute as field of table."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView></TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Declare a primary key composing all the primary keys of participating entities."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView></TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Declare all foreign key constraints."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView></TableRow>
+        </TableLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mapping Weak Entity Sets"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:textColor="#008080"
+            android:textSize="19dp"
+            android:text="A weak entity set is one which does not have any primary key associated with it."
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:layout_marginTop="14dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/mapping_weak_entity_sets" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mapping Process"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp">
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Create table for weak entity set."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Add all its attributes to table as field."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Add the primary key of identifying entity set."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Declare all foreign key constraints."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+            </TableRow>
+        </TableLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mapping Hierarchical Entities"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:textColor="#008080"
+            android:textSize="19dp"
+            android:text="ER specialization or generalization comes in the form of hierarchical entity sets."
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:layout_marginTop="14dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/inheritance" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mapping Process"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp">
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Create tables for all higher-level entities."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView></TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Create tables for lower-level entities."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView></TableRow>
+
+
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Add primary keys of higher-level entities in the table of lower-level entities."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView></TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="In lower-level tables, add all other attributes of lower-level entities."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView></TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Declare primary key of higher-level table and the primary key for lower-level table."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView></TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Declare foreign key constraints."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView></TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+</ScrollView>

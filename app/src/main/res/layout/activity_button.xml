@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:scrollbars="none"
+    tools:context="urgroup.in.dbmssqlcompleteguide.button">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="DBMS - Overview"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:text="A Database is a collection of data related to data and data is a collection of facts and figures that can be processed to produce information."
+            android:textColor="#008080"
+            android:textSize="19dp" />
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:text="Most data represent recordable facts, data aids in producing information, which are based on facts. For example, if we have data about the score obtained by all students, then we can estimate the topper and the average score."
+            android:textColor="#008080"
+            android:textSize="19dp" />
+
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:text="A database management system stores the data in such a way that it becomes easy to create, retrieve, update and manage."
+            android:textColor="#008080"
+            android:textSize="19dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:text="Why Use DBMS?"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="In the short term to develop software applications."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+
+            </TableRow>
+
+            <TableRow android:layout_marginTop="14dp">
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Freedom and efficient use of data."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+
+            </TableRow>
+
+            <TableRow android:layout_marginTop="14dp">
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="For uniform data administration."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+
+            </TableRow>
+
+            <TableRow android:layout_marginTop="14dp">
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="For data integrity and security"
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+
+            </TableRow>
+
+            <TableRow android:layout_marginTop="14dp">
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="For concurrent access to data, and data recovery from crashes."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+
+            </TableRow>
+
+            <TableRow android:layout_marginTop="14dp">
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="23dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="To use user-friendly declarative query language."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:text="Where is Database Management System (DBMS) being Used?"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp">
+
+            <TableRow android:layout_marginTop="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Airlines: Reservations, programs, etc."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+
+            </TableRow>
+
+            <TableRow android:layout_marginTop="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Universities: registration, results, grades etc."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+
+            </TableRow>
+
+            <TableRow android:layout_marginTop="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Sales: Products, Purchases, Customers etc."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+
+            </TableRow>
+
+            <TableRow android:layout_marginTop="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Banking: All transactions etc."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:text="Components of DBMS"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:layout_marginTop="14dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/components" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp">
+
+            <TableRow android:layout_marginTop="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Users: Users can be any type of DB administrator, system developer or database users."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+
+            </TableRow>
+
+            <TableRow android:layout_marginTop="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Database applications: Database applications can be departmental, personal, organization and internal."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+
+            </TableRow>
+
+            <TableRow android:layout_marginTop="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="DBMS: Software that allows users to create and manipulate database access."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+
+            </TableRow>
+
+            <TableRow android:layout_marginTop="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Database: A collection of logical data as a unit."
+                    android:textColor="#008080"
+                    android:textSize="19dp"></TextView>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:text="DBMS vs File Management System"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:text="A database management system (DMS) is a combination of design to manipulate data electronically via computer software, hardware and computer processing. Two types of database management systems are DBMS and FMS. In simple words, a file management system (FMS) is a database management system that allows access to single files or tables at a time. FMS adjusts flat files that have no relation to other files. The predecessor to the FMS database management system (DBMS), which allows access to multiple files or tables at one time (see Figure 1 below)."
+            android:textColor="#008080"
+            android:textSize="19dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:layout_marginTop="14dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/dbms" />
+
+
+    </LinearLayout>
+</ScrollView>

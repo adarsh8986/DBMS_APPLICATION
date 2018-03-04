@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="urgroup.in.dbmssqlcompleteguide">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".button">
+
+        </activity>
+        <activity android:name=".practical1" />
+        <activity android:name=".privacy_policy" />
+        <activity
+            android:name=".Quiz_Game"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".button1" />
+        <activity android:name=".button2" />
+        <activity android:name=".button3" />
+        <activity android:name=".button4" />
+        <activity android:name=".button5" />
+        <activity android:name=".button6" />
+        <activity android:name=".button7" />
+        <activity android:name=".button8" />
+        <activity android:name=".button9" />
+        <activity android:name=".button10" />
+        <activity android:name=".button11" />
+        <activity android:name=".button12" />
+        <activity android:name=".button13" />
+        <activity android:name=".button14" />
+        <activity android:name=".button15" />
+        <activity android:name=".button16" />
+        <activity android:name=".button17" />
+        <activity android:name=".button18" />
+        <activity android:name=".button19" />
+        <activity android:name=".button20" />
+        <activity android:name=".button21" />
+        <activity android:name=".button22" />
+        <activity android:name=".data" />
+        <activity
+            android:name=".teacher"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".syllabus"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".internal1"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Internal2"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".books"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>
